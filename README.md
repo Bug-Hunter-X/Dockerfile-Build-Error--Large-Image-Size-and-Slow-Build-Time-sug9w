@@ -1,0 +1,3 @@
+This repository contains a Dockerfile with a common error that leads to large image sizes and slow build times. The error stems from the omission of the `RUN apt-get clean` command after installing dependencies.
+
+The original `Dockerfile` demonstrates the error. The `DockerfileSolution.txt` provides the corrected version that includes the `RUN apt-get clean` command to remove unnecessary packages and reduce image size.  This significantly improves build times and reduces the image size, resulting in a more efficient Docker image.
